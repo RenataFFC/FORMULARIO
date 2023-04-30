@@ -6,6 +6,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 body {
     background: linear-gradient(to right, #F2C94C, #F2994A);
     margin: 0;
@@ -29,13 +30,14 @@ body {
 
 .logo h1 {
     font-size: 15px;
+    color: #494C4E;
 }
 
 
 form {
     width: 50%;
     min-width: 360px;
-    background-color: white;
+    background-color: #FFF;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 
@@ -55,6 +57,7 @@ input.inputUser, textarea, .servico p, .solicitante p {
 textarea {
     height: 200px;
     padding-top: 10px;
+    resize: none;
 }
 
 .servico, .solicitante, .tipo {
@@ -74,6 +77,7 @@ textarea {
     height: 25px;
     background: linear-gradient(to right, #F2C94C, #F2994A);
     padding: 5px;
+    color: #494C4E;
 }
 
 .serv-radio {
@@ -81,6 +85,7 @@ textarea {
     margin: auto 10px;
     font-size: 15px;
     padding: 10px;
+    color: #494C4E;
 
 }
 
@@ -114,21 +119,58 @@ input[type=radio] {
 
 }
 
-.bottom{
+.bottom {
     display: flex;
     justify-content: center;
     align-items: center;
- margin-top: 10px;
+    margin-top: 10px;
 }
 
 #submit {
     justify-content: center;
- align-items: center;
+    align-items: center;
     background: linear-gradient(to right, #F2C94C, #F2994A);
-    color: #FFF;
+    color: #494C4E;
     width: 100px;
     height: 30px;
     border-radius: 8px;
     text-align: center;
- border: none;
+    border: none;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+.footer p {
+    margin: 0;
+    padding: 10px;
+    font-size: 10px;
+    color: #494C4E;
+
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        display: flex;
+        position: relative;
+        top: 30%;
+        left: 45%;
+        transform: translate(-30%, -30%);
+        margin-top: 25%;
+        padding: 10px;
+        border-radius: 15px;
+        width: 80%;
+        height: 85%;
+
+    }
+
+    form {
+        width: 70%;
+        min-width: 400px;
+
+    }
+
 }

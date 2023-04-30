@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <form>
+    <form id="budget-form">
         <div class="logo">
             <img src="./imagens/logo.png" alt="logo">
             <h1>SOLICITAÇÃO DE ORÇAMENTO / MANUTENÇÃO</h1>
@@ -22,13 +22,11 @@
 
 
         <input type="text" id="name" name="name" class="inputUser" placeholder="Nome" required>
-
-
-        <input type="tel" id="phone" name="phone" class="inputUser phone" placeholder="Número Telefone" required>
         <input type="email" id="email" name="email" class="inputUser email" placeholder="E-mail" required>
-        <input type="text" id="CNPJ-CPF" name="CNPJ" class="inputUser" placeholder="Cnpj/Cpf - Campo não obrigatório">
-        <input type="text" id="Responsavel" name="Responsavel" class="inputUser"
-            placeholder="Solicitante: Exemplo Sindico, Zelador, Pessoa Fisica">
+        <input type="tel" id="phone" name="phone" class="inputUser phone" placeholder="Número Telefone" required>
+
+        <input type="text" id="cnpj" name="cnpj" class="inputUser" placeholder="CNPJ - Campo não obrigatório">
+        <input type="text" id="responsavel" name="responsavel" class="inputUser"  placeholder="Solicitante: Exemplo Sindico, Zelador, Pessoa Fisica">
 
 
         <div class="servico">
@@ -40,46 +38,54 @@
                     required>
                 <label for="instalacaonova">Instalação Nova</label>
             </div>
-       
 
-    
+
+
             <p>Solicitante</p>
-                <select id="solicitacao" name="solicitacao" required>
-                    <option value=""></option>
-                    <option value="Condominio">Condomínio</option>
-                    <option value="Empresa">Empresa</option>
-                    <option value="PessoaFisica">Pessoa Física</option>
-                </select>      
-    
-       
-     
-        <p>Seu contato é para qual atendimento:</p>
-        <select id="tipoServico" name="tipoServico" required>
-            <option value="Motor">Motor</option>
-            <option value="Camera">Câmeras</option>
-            <option value="Alarme">Alarme</option>
-            <option value="Interfone">Interfone</option>
-            <option value="CercaEletrica">Cerca Elétrica</option>
-        </select>
-
-        <p> <label for="modelo" class="">Portão Automatizado? Qual o tipo do motor</label></p>
-        <select id="modelo" name="modelo">
-            <option value=""></option>
-            <option value="Deslizante">Deslizante</option>
-            <option value="Basculante">Basculante</option>
-            <option value="PivoTipoFolha">Pivô tipo folha</option>
-            <option value="PivoRobo">Pivô Robô</option>
-        </select>
+            <select id="solicitacao" name="solicitacao" required>
+                <option value=""></option>
+                <option value="Condominio">Condomínio</option>
+                <option value="Empresa">Empresa</option>
+                <option value="PessoaFisica">Pessoa Física</option>
+            </select>
 
 
 
-        <textarea id="message" name="message" required
-            placeholder="Descreva aqui, brevemente sua solicitação de orçamento para manutenção ou aquisição do novo motor"></textarea>
-        <div class="bottom">
-        <input type="submit" id="submit" value="Enviar">
-</div>
+            <p>Seu contato é para qual atendimento:</p>
+            <select id="tipoServico" name="tipoServico" required>
+                <option value="Motor">Motor</option>
+                <option value="Camera">Câmeras</option>
+                <option value="Alarme">Alarme</option>
+                <option value="Interfone">Interfone</option>
+                <option value="CercaEletrica">Cerca Elétrica</option>
+            </select>
+
+            <p> <label for="modelo" class="">Portão Automatizado? Qual o tipo do motor</label></p>
+            <select id="modelo" name="modelo">
+                <option value=""></option>
+                <option value="Deslizante">Deslizante</option>
+                <option value="Basculante">Basculante</option>
+                <option value="PivoTipoFolha">Pivô tipo folha</option>
+                <option value="PivoRobo">Pivô Robô</option>
+            </select>
+
+
+
+            <textarea id="message" name="message" required
+                placeholder="Descreva aqui, brevemente sua solicitação de orçamento para manutenção ou aquisição do novo motor"></textarea>
+            <div class="bottom">
+                <input type="submit" id="submit" value="Enviar">
+            </div>
     </form>
+    <footer>
+        <div class="footer">
+            <p>
+                Copyright ©2023 | Todos os Direitos Reservados a EDF SEGURANÇA ELETRONICA
+            <p> Desenvolvido por <strong>Renata Fernandes</strong> </p>
+        </div>
+    </footer>
 
+<script src="./script,js"></script>
 </body>
 
 </html>
