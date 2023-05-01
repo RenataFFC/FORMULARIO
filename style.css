@@ -35,7 +35,7 @@ body {
 
 
 form {
-    width: 50%;
+    width: 30%;
     min-width: 300px;
     background-color: #FFF;
     border-radius: 5px;
@@ -45,7 +45,7 @@ form {
 
 input.inputUser, textarea, .servico p, .solicitante p {
     font-size: 14px;
-    min-width: 330px;
+    min-width: 250px;
     display: block;
     margin: 0 auto;
     border-radius: 1px solid #c1c1c1;
