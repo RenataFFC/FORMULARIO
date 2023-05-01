@@ -36,7 +36,7 @@ body {
 
 form {
     width: 50%;
-    min-width: 360px;
+    min-width: 300px;
     background-color: #FFF;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
